@@ -58,9 +58,9 @@ HTML_PAGE = """<!DOCTYPE html>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --acc:#0ea5e9;
-  --acc2:#38bdf8;
-  --bg:#00070d;
+  --acc:#f5c842;
+  --acc2:#ffd96a;
+  --bg:#09080a;
   --s1:color-mix(in srgb,var(--bg) 60%,#111);
   --s2:color-mix(in srgb,var(--bg) 40%,#1a1a1a);
   --s3:color-mix(in srgb,var(--bg) 20%,#222);
@@ -531,7 +531,7 @@ footer{
 // ── App config (injected by generator) ─────────────────────────────
 const APP = {
   name:           'Code Reviewer',
-  mode:           'fastapi',          // 'html' or 'fastapi'
+  mode:'fastapi',          // 'html' or 'fastapi'
   auth:           true,    // true | false
   systemPrompt:   "You are an expert Code Reviewer assistant. Paste code and get a thorough review covering bugs, security, performance, and style.",
   promptTemplate: "Code Snippet: {{code_snippet}}\\nLanguage: {{language}}\\nFocus Area: {{focus_area}}",
